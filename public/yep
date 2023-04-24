@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Deer Data Lookup</title>
+    <style>
+      /* Add some basic styles to make the page look nice */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        margin: 0;
+        padding: 10px;
+        background-color: #2196F3;
+        color: white;
+        text-align: center;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+      }
+      button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #3e8e41;
+      }
+      .container {
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Deer Data Lookup</h1>
+    <div class="container">
+      <label for="county">County:</label>
+      <input type="text" id="county" name="county" placeholder="Enter a county in Alabama...">
+      <button onclick="lookup()">Lookup</button>
+      <p id="result"></p>
+    </div>
+    <script src="deer_data.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
